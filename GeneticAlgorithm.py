@@ -4,7 +4,7 @@ import logging
 
 
 from LineupGenerator import LineupGenerator
-from fitness_formulas.LCSFormulaTwo import LCSFormulaTwo as lf
+from fitness_formulas.LCSFormulaFactory import fitness_formula_factory
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -12,14 +12,15 @@ logger = logging.getLogger(__name__)
 
 class GeneticAlgorithm:
 
-    def __init__(self, lineup_generator):
+    def __init__(self, lineup_generator, formula_num):
         self.lineup_generator = lineup_generator
+        self.ff = fitness_formula_factory(formula_num)
 
     def fitness(self, lineup):
         if not LineupGenerator.lineup_under_salary_cap(lineup):
             return 0
         else:
-            return lf.lcs_lineup_fitness(lineup)
+            return self.ff(lineup)
 
     def run(self, generations, lineups=None):
         logger.info("     Generations left {}".format(generations))
@@ -75,14 +76,17 @@ class GeneticAlgorithm:
         return best[0]
 
     def print_lineup(self, lineup):
-        for p in lineup:
-            if p.position != "TEAM":
-                logger.info("     {} {} {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
-            else:
-                logger.info("     {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg))
-        logger.info("     Team fitness: {}".format(self.fitness(lineup)))
-        logger.info("     Team salary: {}".format(sum(int(x.salary) for x in lineup)))
-        logger.info("\n")
+        try:
+            for p in lineup:
+                if p.position != "TEAM":
+                    logger.info("     {} {} {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
+                else:
+                    logger.info("     {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg))
+            logger.info("     Team fitness: {}".format(self.fitness(lineup)))
+            logger.info("     Team salary: {}".format(sum(int(x.salary) for x in lineup)))
+            logger.info("\n")
+        except:
+            logger.error("This player is missing data: {}".format(p.name))
 
 
     def mate_top_two(self, lineups):
@@ -98,7 +102,6 @@ class GeneticAlgorithm:
                 first = [l, score]
             elif score > second[1]:
                 second = [l, score]
-        #self.print_lineup(first[0])
         return self.get_offspring(first[0], second[0])
 
 
@@ -110,7 +113,6 @@ class GeneticAlgorithm:
                 first = [l, score]
             elif score > first[1]:
                 first = [l, score]
-        #self.print_lineup(first[0])
         return self.get_offspring(first[0])
 
     def get_all_random(self):
