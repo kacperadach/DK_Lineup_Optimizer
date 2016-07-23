@@ -1,11 +1,12 @@
-from CSVPlayerGather import get_all_players
+from CSVPlayerGather import get_all_players, get_all_games
 from LineupGenerator import LineupGenerator
 from LoLPlayerHolder import LoLPlayerHolder
 from GeneticAlgorithm import GeneticAlgorithm
 from AdditionalStats import update_lcs_fantasy_stats
 
 all_players = get_all_players("DKSalaries.txt")
-player_holder = LoLPlayerHolder(all_players)
+all_games = get_all_games("DKSalaries.txt")
+player_holder = LoLPlayerHolder(all_players, all_games)
 update_lcs_fantasy_stats(player_holder, 1, 8)
 lineup_gen = LineupGenerator(player_holder)
 g = GeneticAlgorithm(lineup_gen, 1)

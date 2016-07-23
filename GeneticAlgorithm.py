@@ -20,7 +20,7 @@ class GeneticAlgorithm:
         if not LineupGenerator.lineup_under_salary_cap(lineup):
             return 0
         else:
-            return self.ff(lineup)
+            return self.ff(lineup, self.lineup_generator.player_holder.games)
 
     def run(self, generations, lineups=None):
         logger.info("     Generations left {}".format(generations))
@@ -81,7 +81,10 @@ class GeneticAlgorithm:
                 logger.info("     {} {} {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
             logger.info("     Team fitness: {}".format(self.fitness(lineup)))
             logger.info("     Team salary: {}".format(sum(int(x.salary) for x in lineup)))
-            logger.info("\n")
+            logger.info("")
+            logger.info("     Games:")
+            for g in self.lineup_generator.player_holder.games:
+                logger.info("     {} vs {}".format(g[0], g[1]))
         except:
             logger.error("This player is missing data: {}".format(p.name))
 
@@ -105,7 +108,7 @@ class GeneticAlgorithm:
     def mate_top_one(self, lineups):
         first = None
         for l in lineups:
-            score = self.fitness(l)
+            score = self.fitness(l, self.lineup_generator.player_holder.games)
             if first is None:
                 first = [l, score]
             elif score > first[1]:

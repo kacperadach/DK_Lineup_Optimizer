@@ -2,7 +2,7 @@ from random import randint
 
 class LoLPlayerHolder:
 
-    def __init__(self, players):
+    def __init__(self, players, games):
         self.mid = []
         self.top = []
         self.jng = []
@@ -10,6 +10,7 @@ class LoLPlayerHolder:
         self.sup = []
         self.team = []
         self.flex =[]
+        self.games = games
         for p in players:
             if p.position.upper() == "MID":
                 self.mid.append(p)
