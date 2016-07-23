@@ -12,9 +12,7 @@ def LCSFormulaOne(lineup):
 
 def get_player_score(player):
     try:
-        if player.position == "TEAM":
-            return player.ppg
-        elif player.standard_deviation == 0:
+        if player.standard_deviation == 0:
             return 0
         else:
             return (player.ppg * (1 - player.standard_deviation))

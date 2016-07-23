@@ -23,30 +23,24 @@ class LoLPlayerHolder:
                 self.sup.append(p)
             elif p.position.upper() == "TEAM":
                 self.team.append(p)
-
             if p.position != "TEAM":
                 self.flex.append(p)
 
-    def update_player(self, name, data):
-        for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex):
-            for p in set:
-                if p.name.upper() == name.upper():
-                    p.update_additional_stats(data)
 
     def update_player_week_performance(self, name, performance):
-        for set in (self.mid, self.top, self.jng, self.adc, self.sup):
+        for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex, self.team):
             for p in set:
                 if p.name.upper() == name.upper():
                     p.update_week_performances(performance)
 
     def update_player_average_performance(self, name, performance):
-        for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex):
+        for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex, self.team):
             for p in set:
                 if p.name.upper() == name.upper():
                     p.update_average_performance(performance)
 
     def update_player_standard_dev(self):
-        for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex):
+        for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex, self.team):
             for p in set:
                 p.calculate_stan_dev()
 

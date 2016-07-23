@@ -78,10 +78,7 @@ class GeneticAlgorithm:
     def print_lineup(self, lineup):
         try:
             for p in lineup:
-                if p.position != "TEAM":
-                    logger.info("     {} {} {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
-                else:
-                    logger.info("     {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg))
+                logger.info("     {} {} {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
             logger.info("     Team fitness: {}".format(self.fitness(lineup)))
             logger.info("     Team salary: {}".format(sum(int(x.salary) for x in lineup)))
             logger.info("\n")
