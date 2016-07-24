@@ -15,5 +15,5 @@ for _ in range(0, 9):
     best_lineups.append(g.run(500))
 best_lineups.sort(key=lambda x: g.fitness(x), reverse=True)
 g.print_lineup(best_lineups[0])
-#lineup_gen.print_players('team')
+#lineup_gen.print_players('all')
 

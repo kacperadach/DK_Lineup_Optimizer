@@ -14,9 +14,9 @@ TEAM_KEY = {
     "Counter Logic Gaming": "Counter Logic Gaming",
     "Team Envy": "Team Envy",
     "Liquid": "Team Liquid",
-    "NRG Esports": "",
+    "NRG Esports": "NRG eSports",
     "ROCCAT": "",
-    "Echo Fox": "",
+    "Echo Fox": "Echo Fox",
     "Phoenix1": "Phoenix1",
     "G2 Esports": ""
 }

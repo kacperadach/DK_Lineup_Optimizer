@@ -98,6 +98,12 @@ class LineupGenerator:
         return new_lineup
 
     def print_players(self, position):
-        for p in getattr(self.player_holder, position):
-            if p.standard_deviation is not None:
-                logger.info("{} {} {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
+        if position.upper() == "ALL":
+            pos = ("top", "jng", "mid", "adc", "sup", "team")
+        else:
+            pos = (position,)
+        for s in pos:
+            logger.info("")
+            for p in getattr(self.player_holder, s):
+                if p.standard_deviation is not None:
+                    logger.info("{} {} {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))

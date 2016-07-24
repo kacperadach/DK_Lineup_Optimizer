@@ -5,6 +5,7 @@ import logging
 
 from LineupGenerator import LineupGenerator
 from fitness_formulas.LCSFormulaFactory import fitness_formula_factory
+from LCSLineupSort import sort_lineup
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -76,9 +77,10 @@ class GeneticAlgorithm:
         return best[0]
 
     def print_lineup(self, lineup):
+        lineup = sort_lineup(lineup)
         try:
             for p in lineup:
-                logger.info("     {} {} {} {} {} {} {}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
+                logger.info("     {:14s} {:4s} {:4s} {:6d} {:5.3f} {:5.3f} {:5.3f}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
             logger.info("     Team fitness: {}".format(self.fitness(lineup)))
             logger.info("     Team salary: {}".format(sum(int(x.salary) for x in lineup)))
             logger.info("")
@@ -108,7 +110,7 @@ class GeneticAlgorithm:
     def mate_top_one(self, lineups):
         first = None
         for l in lineups:
-            score = self.fitness(l, self.lineup_generator.player_holder.games)
+            score = self.fitness(l)
             if first is None:
                 first = [l, score]
             elif score > first[1]:
