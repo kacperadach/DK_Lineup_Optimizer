@@ -6,7 +6,7 @@ TEAM_BLACKLIST = ()
 PLAYER_BLACKLIST = ()
 
 
-def LCSFormulaOne(lineup, games):
+def LCSFormulaThree(lineup, games):
     if not LineupGenerator.lineup_under_salary_cap(lineup):
         return 0
     else:
@@ -21,7 +21,7 @@ def get_player_score(player):
         if player.standard_deviation == 0:
             return 0
         else:
-            return (player.ppg * (1 - player.standard_deviation))
+            return (player.ppg * (player.week_performances[-1] / player.average_performance))
     except:
         return player.ppg
 

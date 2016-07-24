@@ -44,6 +44,7 @@ class LoLPlayerHolder:
         for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex, self.team):
             for p in set:
                 p.calculate_stan_dev()
+                p.calculate_weighted_stan_dev()
 
     def get_random_player(self, pos):
         if pos.upper() == "MID":

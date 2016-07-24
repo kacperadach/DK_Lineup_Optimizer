@@ -80,7 +80,7 @@ class GeneticAlgorithm:
         lineup = sort_lineup(lineup)
         try:
             for p in lineup:
-                logger.info("     {:14s} {:4s} {:4s} {:6d} {:5.3f} {:5.3f} {:5.3f}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, (p.ppg * (1 - p.standard_deviation))))
+                logger.info("     {:14s} {:4s} {:4s} {:6d} {:5.3f} {:5.3f} {:5.3f}".format(p.name, p.position, p.team, p.salary, p.ppg, p.standard_deviation, p.special_stat))
             logger.info("     Team fitness: {}".format(self.fitness(lineup)))
             logger.info("     Team salary: {}".format(sum(int(x.salary) for x in lineup)))
             logger.info("")
