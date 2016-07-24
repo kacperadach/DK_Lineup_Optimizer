@@ -20,7 +20,7 @@ def run(start_week, end_week, fitness_formula, iterations=9, generations=500):
     g.print_lineup(best_lineups[0])
 
 if __name__ == "__main__":
-    run(1, 8, 2)
+    run(6, 8, 1)
 
 #lineup_gen.print_players('all')
 

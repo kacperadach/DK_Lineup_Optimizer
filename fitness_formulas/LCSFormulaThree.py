@@ -2,7 +2,7 @@ from __future__ import division
 from LineupGenerator import LineupGenerator
 
 
-TEAM_BLACKLIST = ()
+TEAM_BLACKLIST = ("nV")
 PLAYER_BLACKLIST = ()
 
 
@@ -21,7 +21,7 @@ def get_player_score(player):
         if player.standard_deviation == 0:
             return 0
         else:
-            return (player.ppg * (player.week_performances[-1] / player.average_performance))
+            return (player.ppg * ((sum(player.week_performances[-3:])/3) / player.average_performance))
     except:
         return player.ppg
 
