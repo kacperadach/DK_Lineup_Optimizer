@@ -1,4 +1,4 @@
-from fitness_formulas import LCSFormulaOne, LCSFormulaTwo, LCSFormulaThree
+from fitness_formulas import LCSFormulaOne, LCSFormulaTwo, LCSFormulaThree, LCSFormulaFour
 
 def fitness_formula_factory(num):
     if num == 1:
@@ -7,3 +7,5 @@ def fitness_formula_factory(num):
         return LCSFormulaTwo.LCSFormulaTwo
     elif num == 3:
         return LCSFormulaThree.LCSFormulaThree
+    elif num == 4:
+        return LCSFormulaFour.LCSFormulaFour
