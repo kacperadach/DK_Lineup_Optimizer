@@ -34,17 +34,19 @@ class LoLPlayerHolder:
                 if p.name.upper() == name.upper():
                     p.update_week_performances(performance)
 
-    def update_player_average_performance(self, name, performance):
+    def update_player_average_performance(self, name, performance, wins=None):
         for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex, self.team):
             for p in set:
                 if p.name.upper() == name.upper():
                     p.update_average_performance(performance)
+                    if wins is not None:
+                        p.update_wins(wins)
 
     def update_player_standard_dev(self):
         for set in (self.mid, self.top, self.jng, self.adc, self.sup, self.flex, self.team):
             for p in set:
                 p.calculate_stan_dev()
-                p.calculate_weighted_stan_dev()
+                p.calculate_weighted_moving_average()
 
     def get_random_player(self, pos):
         if pos.upper() == "MID":

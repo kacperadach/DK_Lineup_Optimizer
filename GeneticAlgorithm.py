@@ -21,7 +21,7 @@ class GeneticAlgorithm:
         if not LineupGenerator.lineup_under_salary_cap(lineup):
             return 0
         else:
-            return self.ff(lineup, self.lineup_generator.player_holder.games)
+            return self.ff(lineup, self.lineup_generator.player_holder)
 
     def run(self, generations, lineups=None):
         logger.info("     Generations left {}".format(generations))

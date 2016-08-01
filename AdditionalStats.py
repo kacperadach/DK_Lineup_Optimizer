@@ -39,7 +39,8 @@ def update_lcs_fantasy_stats(player_holder, first, last):
         tables = r.findAll("td")
         name = tables[0].text
         avg_points_split = tables[2].text
-        player_holder.update_player_average_performance(match_team_name(name), avg_points_split)
+        wins = tables[4].text
+        player_holder.update_player_average_performance(match_team_name(name), avg_points_split, wins)
 
     for x in range(first, last+1):
         htmlFile_str = "html/" + BASE_URL_TEAM + "week_" + str(x) + ".html"

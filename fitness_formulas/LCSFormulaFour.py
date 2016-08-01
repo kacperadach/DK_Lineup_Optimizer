@@ -9,13 +9,13 @@ TEAM_BLACKLIST = ()
 PLAYER_BLACKLIST = ()
 
 
-def LCSFormulaFour(lineup, games):
+def LCSFormulaFour(lineup, player_holder):
     if not LineupGenerator.lineup_under_salary_cap(lineup):
         return 0
     else:
         fitness = get_lineup_player_scores(lineup)
         team_multiplier = get_team_multiplier(lineup)
-        games_multiplier = get_game_multiplier(lineup, games)
+        games_multiplier = get_game_multiplier(lineup, player_holder.games)
         black_list_multipler = get_blacklist_muiltiplier(lineup, PLAYER_BLACKLIST, TEAM_BLACKLIST)
         return fitness * team_multiplier * black_list_multipler * games_multiplier
 
