@@ -1,7 +1,6 @@
-# DK_Lineup_Optimizer
-Genetic Algorithm that prints me money
+# Draftkings Lineup Optimizer
 
-I believe that making a draftkings lineup is nothing more than an optimization/statistics problem. I am attempting to solve this problem using a Genetic Algorithm that uses a super secret fitness formula (see LCSFitnessFormulas).
+Using Genetic Algorithms to optimize Draftkings lineups based on set parameters.
 
 ## How to use the Algo:
 
@@ -11,10 +10,7 @@ I believe that making a draftkings lineup is nothing more than an optimization/s
   2. Go to http://fantasy.na.lolesports.com/en-US/stats and for each week played download the ```<tbody>``` tag of the table and save it in the html folder with lcs_fantasy_week_x.html
   3. On that site, also download the entire split stats and save it in the html folder as lcs_fantasy_stats_split.html
   4. Do the last 2 steps for the teams as well.
-  5. Then just run the run.py file in an IDE or with ```python run.py```
-
-## ToDo:
-* Automatically pull html and csv from the internet and save them in the appropriate directories with the correct names
-* Add command line arguments to run the algo through terminal
-* Add compatibility with different sports (NFL, NBA)
-
+  5. Then just run the run.py file in the LCS folder with ```python run.py```
+* For NFL:
+  1. Download the Draftkings CSV from their website and save it in the data directory with the default name of "DKSalaries.txt"
+  2. Then just run the run.py file in the NFL folder with ```python run.py```
