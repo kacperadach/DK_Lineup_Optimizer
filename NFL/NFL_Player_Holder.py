@@ -51,3 +51,9 @@ class NFLPlayerHolder:
         else:
             index = randint(0, len(pos_array)-1)
             return pos_array[index]
+
+    def remove_non_projected_players(self):
+        for set in (self.qb, self.rb, self.wr, self.te, self.flex, self.dst):
+            for p in set:
+                if not p.projected_points or p.projected_points == 0:
+                    set.remove(p)

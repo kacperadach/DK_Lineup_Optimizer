@@ -22,14 +22,16 @@ def run(fitness_formula, week=1, iterations=9, generations=500):
     all_games = get_all_games(DK_SALARY_CSV)
     player_holder = NFLPlayerHolder(all_players, all_games)
     player_holder.update_projections(get_all_projections(PROJECTIONS_CSV))
+    player_holder.remove_non_projected_players()
     lineup_gen = NFLLineupGenerator(player_holder)
     g = GeneticAlgorithm(lineup_gen, fitness_formula)
     best_lineups=[]
-    for _ in range(0, iterations):
+    for x in range(0, iterations):
+        logger.info("Generation {}".format(x + 1))
         best_lineups.append(g.run(generations))
     best_lineups.sort(key=lambda x: g.fitness(x), reverse=True)
     g.print_lineup(best_lineups[0])
     end_time = datetime.now()
     logger.info("Finished Algorithm, total time: {}".format(end_time-start_time))
 
-run(3, week=1, iterations=9)
+run(4, week=1, iterations=10)

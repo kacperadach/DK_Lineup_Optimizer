@@ -4,7 +4,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-from constants import SALARY_CAP, GET_ITERABLE_VALID_LINEUP, FLEX_POSITIONS, POSITIONS
+from constants import SALARY_CAP, GET_ITERABLE_VALID_LINEUP, FLEX_POSITIONS, POSITIONS, VALID_LINEUP_POSITIONS
 
 
 class NFLLineupGenerator:
@@ -65,6 +65,12 @@ class NFLLineupGenerator:
                 lineup.remove(p)
                 return p
         return None
+
+    @staticmethod
+    def _is_valid_lineup(lineup):
+        positions = [x.position for x in lineup]
+        for p in positions:
+            num = 
 
     def merge_lineups(self, lineup, second, odds, random=False):
         first_lineup = copy(lineup)

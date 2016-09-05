@@ -3,13 +3,13 @@ from NFL.NFL_Lineup_Generator import NFLLineupGenerator
 from NFLGeneralMultipliers import *
 import numpy
 
-# taking ratio between projected_points / ppg then std_dev
+# taking ratio between projected_points / ppg then std_dev + min projected_points
 
 TEAM_BLACKLIST = ()
-PLAYER_BLACKLIST = ()
+PLAYER_BLACKLIST = ('Sam Bradford',)
 
 
-def NFLFormulaThree(lineup, player_holder):
+def NFLFormulaFour(lineup, player_holder):
     if not NFLLineupGenerator.lineup_under_salary_cap(lineup):
         return 0
     else:
@@ -21,9 +21,13 @@ def NFLFormulaThree(lineup, player_holder):
 
 def get_player_score(player):
     if player.projected_points:
-        if player.ppg == 0:
-            return 0
-        return player.projected_points * (player.projected_points / player.ppg)
+        if player.projected_points < 5:
+            return -100
+        if player.ppg <= 0:
+            return -100
+        if player.ppg > player.projected_points + 10:
+            return -100
+        return player.projected_points #+ (player.ppg / 3)
     else:
         return -100
 
@@ -33,4 +37,4 @@ def get_lineup_player_scores(lineup):
         fitness_score = get_player_score(p)
         fitness.append(fitness_score)
         p.special_stat = fitness_score
-    return sum([(x - numpy.std(numpy.array(fitness))) for x in fitness])
+    return sum(fitness) #* (numpy.std(numpy.array(fitness))/ sum(fitness))

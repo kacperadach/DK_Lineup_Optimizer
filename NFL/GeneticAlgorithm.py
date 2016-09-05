@@ -24,7 +24,6 @@ class GeneticAlgorithm:
             return self.ff(lineup, self.lineup_generator.player_holder)
 
     def run(self, generations, lineups=None):
-        logger.info("     Generations left {}".format(generations))
         if generations == 0:
             return self.get_top_lineup(lineups)
         elif lineups is None:
