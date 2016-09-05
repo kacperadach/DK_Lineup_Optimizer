@@ -4,7 +4,6 @@ Using Genetic Algorithms to optimize Draftkings lineups based on set parameters.
 
 ## How to use the Algo:
 
- First of all it only runs for LCS, will add more sports as the seasons change
 * For LoL:
   1. Download the Draftkings CSV from their website and save it in the text directory with the default name of "DKSalaries.txt"
   2. Go to http://fantasy.na.lolesports.com/en-US/stats and for each week played download the ```<tbody>``` tag of the table and save it in the html folder with lcs_fantasy_week_x.html
