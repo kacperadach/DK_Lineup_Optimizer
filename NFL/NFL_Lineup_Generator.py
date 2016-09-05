@@ -15,9 +15,10 @@ class NFLLineupGenerator:
     def get_random_valid_lineup(self):
         lineup = []
         for position in GET_ITERABLE_VALID_LINEUP():
-            player = self.player_holder.get_random_player(position)
-            if player not in lineup:
-                lineup.append(player)
+            player = None
+            while not player or player in lineup:
+                player = self.player_holder.get_random_player(position)
+            lineup.append(player)
         return lineup
 
     @staticmethod

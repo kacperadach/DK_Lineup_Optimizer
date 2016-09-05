@@ -9,7 +9,7 @@ TEAM_BLACKLIST = ()
 PLAYER_BLACKLIST = ()
 
 
-def NFLFormulaTwo(lineup, player_holder):
+def NFLFormulaThree(lineup, player_holder):
     if not NFLLineupGenerator.lineup_under_salary_cap(lineup):
         return 0
     else:
@@ -21,7 +21,9 @@ def NFLFormulaTwo(lineup, player_holder):
 
 def get_player_score(player):
     if player.projected_points:
-        return player.projected_points
+        if player.ppg == 0:
+            return 0
+        return player.projected_points * (player.projected_points / player.ppg)
     else:
         return -100
 

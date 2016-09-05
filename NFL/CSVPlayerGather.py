@@ -11,8 +11,7 @@ def get_all_players(file_path):
         for row in reader:
             if row[0] == "Position":
                 continue
-            else:
-                players.append(NFLPlayer(row[1], row[5], row[0], int(row[2]), float(row[4])))
+            players.append(NFLPlayer(row[1], row[5], row[0], int(row[2]), float(row[4])))
     return players
 
 def get_all_games(file_path):
@@ -23,10 +22,9 @@ def get_all_games(file_path):
         for row in reader:
             if row[0] == "Position":
                 continue
-            else:
-                game = _game_parser(row[3])
-                if game not in games:
-                    games.append(game)
+            game = _game_parser(row[3])
+            if game not in games:
+                games.append(game)
     return games
 
 def get_all_projections(file_path):

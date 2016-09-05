@@ -30,7 +30,6 @@ def run(start_week, end_week, fitness_formula, iterations=9, generations=500):
     logger.info("Finished Algorithm, total time: {}".format(end_time-start_time))
 
 if __name__ == "__main__":
-    run(1, 8, 4)
+    run(2, 8, 4)
 
-#lineup_gen.print_players('all')
 

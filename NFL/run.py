@@ -15,9 +15,9 @@ DK_SALARY_CSV = "DKSalaries.txt"
 PROJECTIONS_CSV = "fan-pros.csv"
 
 def run(fitness_formula, week=1, iterations=9, generations=500):
+    scrape(week)
     start_time = datetime.now()
     logger.info("Beginning Algorithm")
-    scrape(week)
     all_players = get_all_players(DK_SALARY_CSV)
     all_games = get_all_games(DK_SALARY_CSV)
     player_holder = NFLPlayerHolder(all_players, all_games)
@@ -32,4 +32,4 @@ def run(fitness_formula, week=1, iterations=9, generations=500):
     end_time = datetime.now()
     logger.info("Finished Algorithm, total time: {}".format(end_time-start_time))
 
-run(1, week=1, iterations=9)
+run(3, week=1, iterations=9)
