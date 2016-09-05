@@ -1,16 +1,16 @@
 from __future__ import division
-from LineupGenerator import LineupGenerator
+
+from LCS.LineupGenerator import LineupGenerator
 from LCSGeneralMultipliers import *
 
-# ppg * matchup multiplier of performance range
-
+# ppg * matchup multiplier of stdev range
 
 
 TEAM_BLACKLIST = ()
 PLAYER_BLACKLIST = ()
 
 
-def LCSFormulaSix(lineup, player_holder):
+def LCSFormulaFive(lineup, player_holder):
     if not LineupGenerator.lineup_under_salary_cap(lineup):
         return 0
     else:
@@ -28,8 +28,7 @@ def get_player_score(player, player_holder):
             matchup_multiplier = get_matchup_multiplier(player, player_holder)
             player_best = max(player.week_performances)
             player_worst = min(player.week_performances)
-            performance_range = player_best - player_worst
-            return player.ppg *  ((player_worst + (performance_range * matchup_multiplier)) / player.average_performance)
+            return player.ppg * (1 + (((player.standard_deviation + player.standard_deviation) * matchup_multiplier) - player.standard_deviation))
     except:
         return player.ppg
 

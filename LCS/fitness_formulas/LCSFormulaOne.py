@@ -1,5 +1,6 @@
 from __future__ import division
-from LineupGenerator import LineupGenerator
+
+from LCS.LineupGenerator import LineupGenerator
 from LCSGeneralMultipliers import *
 
 # ppg - stdev

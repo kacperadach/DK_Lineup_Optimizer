@@ -1,6 +1,7 @@
 from __future__ import division
-from LineupGenerator import LineupGenerator
-from fitness_formulas import LCSFormulaOne, LCSFormulaTwo, LCSFormulaThree, LCSFormulaFour, LCSFormulaFive, LCSFormulaSix
+
+from LCS.LineupGenerator import LineupGenerator
+from LCS.fitness_formulas import LCSFormulaOne, LCSFormulaTwo, LCSFormulaThree, LCSFormulaFour, LCSFormulaFive, LCSFormulaSix
 
 # all formulas
 

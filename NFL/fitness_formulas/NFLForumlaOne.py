@@ -1,32 +1,28 @@
 from __future__ import division
-from LineupGenerator import LineupGenerator
-from LCSGeneralMultipliers import *
+from NFL.NFL_Lineup_Generator import NFLLineupGenerator
+from NFLGeneralMultipliers import *
 
-# ppg * weight_moving_average
+# projected points
 
-
-TEAM_BLACKLIST = ("nV")
+TEAM_BLACKLIST = ()
 PLAYER_BLACKLIST = ()
 
 
-def LCSFormulaTwo(lineup, player_holder):
-    if not LineupGenerator.lineup_under_salary_cap(lineup):
+def NFLFormulaOne(lineup, player_holder):
+    if not NFLLineupGenerator.lineup_under_salary_cap(lineup):
         return 0
     else:
         fitness = get_lineup_player_scores(lineup)
         team_multiplier = get_team_multiplier(lineup)
         games_multiplier = get_game_multiplier(lineup, player_holder.games)
         black_list_multipler = get_blacklist_muiltiplier(lineup, PLAYER_BLACKLIST, TEAM_BLACKLIST)
-        return ((fitness * team_multiplier) * games_multiplier) * black_list_multipler
+        return fitness * team_multiplier * games_multiplier * black_list_multipler
 
 def get_player_score(player):
-    try:
-        if player.standard_deviation == 0:
-            return 0
-        else:
-            return (player.ppg * (player.weighted_moving_average/player.average_performance))
-    except:
-        return player.ppg
+    if player.projected_points:
+        return player.projected_points
+    else:
+        return 0
 
 def get_lineup_player_scores(lineup):
     fitness = 0
