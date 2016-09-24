@@ -38,7 +38,6 @@ class GeneticAlgorithm:
             lineups = self.get_all_random()
         return self.run(generations-1, lineups)
 
-
     def get_offspring(self, first, second=None):
         if second is None:
             second = self.lineup_generator.get_random_valid_lineup()
@@ -50,12 +49,12 @@ class GeneticAlgorithm:
         new_lineups.append(self.lineup_generator.merge_lineups(first, second, 60))
         new_lineups.append(self.lineup_generator.merge_lineups(first, second, 65))
         new_lineups.append(self.lineup_generator.merge_lineups(first, second, 70))
-        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 46, random=True))
-        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 42, random=True))
-        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 38, random=True))
-        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 34, random=True))
+        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 40, random=True))
+        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 35, random=True))
         new_lineups.append(self.lineup_generator.merge_lineups(first, second, 30, random=True))
-        new_lineups.append(self.lineup_generator.get_random_valid_lineup())
+        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 25, random=True))
+        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 20, random=True))
+        new_lineups.append(self.lineup_generator.merge_lineups(first, second, 10, random=True))
         return new_lineups
 
     def get_top_lineup(self, lineup):
@@ -68,7 +67,7 @@ class GeneticAlgorithm:
                 best = [l, score]
         return best[0]
 
-    def print_lineup(self, lineup):
+    def print_lineup(self, lineup, games=True):
         try:
             lineup = sort_lineup(lineup)
             logger.info("     {}               {}   {}   {}   {}      {}".format("Name", "Position", "Team", "Salary", "PPG", "Projected Points"))
@@ -77,9 +76,10 @@ class GeneticAlgorithm:
             logger.info("     Team fitness: {}".format(self.fitness(lineup)))
             logger.info("     Team salary: {}".format(sum(int(x.salary) for x in lineup)))
             logger.info("")
-            logger.info("     Games:")
-            for g in self.lineup_generator.player_holder.games:
-                logger.info("     {} vs {}".format(g[0], g[1]))
+            if games:
+                logger.info("     Games:")
+                for g in self.lineup_generator.player_holder.games:
+                    logger.info("     {} vs {}".format(g[0], g[1]))
         except:
             logger.error("This player is missing data: {}".format(p.name))
 

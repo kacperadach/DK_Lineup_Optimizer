@@ -28,5 +28,7 @@ VALID_LINEUP_POSITIONS = {
     'DST': 1
 }
 
+FFPRO = 'http://www.fantasypros.com/nfl/projections/'
+
 def GET_ITERABLE_VALID_LINEUP():
     return [key for key, val in VALID_LINEUP_POSITIONS.items() for _ in range(0, val)]

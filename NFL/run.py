@@ -2,7 +2,6 @@ from scraper import scrape
 from CSVPlayerGather import get_all_games, get_all_players, get_all_projections
 from NFL_Player_Holder import NFLPlayerHolder
 from NFL_Lineup_Generator import NFLLineupGenerator
-from constants import GET_ITERABLE_VALID_LINEUP
 from NFL.GeneticAlgorithm import GeneticAlgorithm
 import logging
 from datetime import datetime
@@ -14,7 +13,7 @@ logger = logging.getLogger(__name__)
 DK_SALARY_CSV = "DKSalaries.txt"
 PROJECTIONS_CSV = "fan-pros.csv"
 
-def run(fitness_formula, week=1, iterations=9, generations=500):
+def run(fitness_formula, week=None, iterations=9, generations=500):
     scrape(week)
     start_time = datetime.now()
     logger.info("Beginning Algorithm")
@@ -34,4 +33,4 @@ def run(fitness_formula, week=1, iterations=9, generations=500):
     end_time = datetime.now()
     logger.info("Finished Algorithm, total time: {}".format(end_time-start_time))
 
-run(4, week=1, iterations=10)
+run(4, iterations=10)

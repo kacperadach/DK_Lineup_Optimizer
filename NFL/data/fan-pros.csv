@@ -1,588 +1,739 @@
-playername,points
-Aaron Rodgers GB ,21.3
-Drew Brees NO ,20.3
-Andrew Luck IND ,20.2
-Russell Wilson SEA ,20.2
-Ben Roethlisberger PIT ,18.9
-Derek Carr OAK ,18.3
-Cam Newton CAR ,17.6
-Matt Ryan ATL ,17.4
-Eli Manning NYG ,17.2
-Matthew Stafford DET ,17.2
-Carson Palmer ARI ,17.2
-Jameis Winston TB ,16.9
-Blake Bortles JAC ,16.8
-Tyrod Taylor BUF ,16.6
-Kirk Cousins WAS ,16.4
-Andy Dalton CIN ,16.3
-Alex Smith KC ,16.2
-Marcus Mariota TEN ,15.9
-Dak Prescott DAL ,15.5
-Brock Osweiler HOU ,15.3
-Philip Rivers SD ,15.2
-Ryan Fitzpatrick NYJ ,15.1
-Joe Flacco BAL ,14.9
-Robert Griffin CLE ,14.6
-Jay Cutler CHI ,14.3
-Ryan Tannehill MIA ,14.0
-Jimmy Garoppolo NE ,12.8
-Blaine Gabbert SF ,12.3
-Shaun Hill MIN ,11.5
-Trevor Siemian DEN ,10.4
-Jared Goff LA ,8.7
-Case Keenum LA ,8.1
-Sam Bradford MIN ,7.2
-Josh McCown CLE ,1.7
-Paxton Lynch DEN ,1.6
-Colin Kaepernick SF ,1.6
-Trevone Boykin SEA ,1.4
-Carson Wentz PHI ,1.3
-Brandon Weeden HOU ,1.1
-Christian Hackenberg NYJ ,0.9
-Matt Flynn ,0.8
-Geno Smith NYJ ,0.7
-Mike Glennon TB ,0.6
-Landry Jones PIT ,0.5
-Chad Henne JAC ,0.5
-Ryan Mallett BAL ,0.5
-E.J. Manuel BUF ,0.5
-Derek Anderson CAR ,0.5
-Dan Orlovsky DET ,0.4
-Colt McCoy WAS ,0.4
-Brian Hoyer CHI ,0.4
-AJ McCarron CIN ,0.4
-Matt Schaub ATL ,0.3
-Matt McGloin OAK ,0.3
-Mark Sanchez DAL ,0.3
-Scott Tolzien IND ,0.3
-Drew Stanton ARI ,0.3
-Taylor Heinicke MIN ,0.3
-Cardale Jones BUF ,0.3
-Kellen Clemens SD ,0.3
-Ryan Nassib NYG ,0.3
-Matt Moore MIA ,0.2
-Nick Foles KC ,0.2
-Cody Kessler CLE ,0.2
-Luke McCown NO ,0.2
-Brett Hundley GB ,0.2
-Chase Daniel PHI ,0.1
-Tom Savage HOU ,0.1
-Matt Barkley CHI ,0.0
-Jimmy Clausen ,0.0
-Matt Cassel TEN ,0.0
+Aaron Rodgers GB ,21.36
+Cam Newton CAR ,21.6
+Drew Brees NO ,24.37
+Russell Wilson SEA ,20.1
+Andrew Luck IND ,20.39
+Matt Ryan ATL ,22.71
+Ryan Tannehill MIA ,19.33
+Philip Rivers SD ,19.36
+Blake Bortles JAC ,19.11
+Derek Carr OAK ,18.04
+Eli Manning NYG ,18.66
+Ben Roethlisberger PIT ,18.58
+Carson Palmer ARI ,18.4
+Marcus Mariota TEN ,18.42
+Matthew Stafford DET ,17.82
+Joe Flacco BAL ,17.19
+Jameis Winston TB ,17.08
+Kirk Cousins WAS ,17.6
+Alex Smith KC ,16.58
+Ryan Fitzpatrick NYJ ,16.91
+Brock Osweiler HOU ,16.6
+Dak Prescott DAL ,16.28
+Carson Wentz PHI ,16.46
+Tyrod Taylor BUF ,15.64
+Andy Dalton CIN ,15.08
+Brian Hoyer CHI ,14.84
+Jacoby Brissett NE ,14.79
+Sam Bradford MIN ,12.68
+Blaine Gabbert SF ,12.79
+Trevor Siemian DEN ,12.77
+Case Keenum LA ,12.43
+Cody Kessler CLE ,12.5
+Jared Goff LA ,0.84
+Paxton Lynch DEN ,0.73
+Colin Kaepernick SF ,0.44
+Mark Sanchez DAL ,0.31
+Mike Glennon TB ,0.26
+Geno Smith NYJ ,0.28
+Chad Henne JAC ,0.23
+Matt Schaub ATL ,0.24
+Ryan Mallett BAL ,0.24
+Matt Cassel TEN ,0.24
+Landry Jones PIT ,0.24
+Tom Savage HOU ,0.21
+Dan Orlovsky DET ,0.2
+E.J. Manuel BUF ,0.21
+Matt McGloin OAK ,0.18
+Nick Foles KC ,0.22
+AJ McCarron CIN ,0.2
+Shaun Hill MIN ,0.2
+Colt McCoy WAS ,0.16
+Scott Tolzien IND ,0.15
+Chase Daniel PHI ,0.15
+Derek Anderson CAR ,0.13
+Kellen Clemens SD ,0.12
+Ryan Nassib NYG ,0.11
+Luke McCown NO ,0.12
+Matt Moore MIA ,0.1
+Sean Mannion LA ,0.12
+Drew Stanton ARI ,0.11
+Trevone Boykin SEA ,0.05
+Charlie Whitehurst CLE ,0.07
+Brett Hundley GB ,0.05
+Matt Barkley CHI ,0.01
+Josh Freeman ,0.0
+Logan Thomas ,0.0
+Nate Sudfeld WAS ,0.0
+Bruce Gradkowski PIT ,0.0
+Mike Bercovici ,0.0
+Kevin Hogan CLE ,0.0
+Michael Vick ,0.0
+Christian Hackenberg NYJ ,0.0
+Austin Davis DEN ,0.0
+Joe Callahan GB ,0.0
+Alex Tanney TEN ,0.0
+David Fales BAL ,0.0
+Robert Griffin CLE ,0.0
+Ryan Griffin HOU ,0.0
+T.J. Yates ,0.0
 Zach Mettenberger PIT ,0.0
-Kellen Moore DAL ,0.0
 Joe Webb CAR ,0.0
-Todd Gurley LA ,15.0
-DeAngelo Williams PIT ,14.9
-Lamar Miller HOU ,14.3
-Adrian Peterson MIN ,14.1
-Ezekiel Elliott DAL ,13.5
-David Johnson ARI ,13.4
-Doug Martin TB ,12.4
-Devonta Freeman ATL ,12.0
-Mark Ingram NO ,11.7
-LeSean McCoy BUF ,11.7
-Eddie Lacy GB ,11.4
-Latavius Murray OAK ,11.1
-Jamaal Charles KC ,10.7
-Carlos Hyde SF ,9.7
-C.J. Anderson DEN ,9.6
-Ryan Mathews PHI ,9.6
-Thomas Rawls SEA ,9.2
-Duke Johnson CLE ,9.0
-Matt Forte NYJ ,9.0
-Frank Gore IND ,8.9
-DeMarco Murray TEN ,8.9
-Jonathan Stewart CAR ,8.8
-Matt Jones WAS ,8.7
-Jeremy Langford CHI ,8.3
-Ameer Abdullah DET ,8.2
-LeGarrette Blount NE ,8.0
-Isaiah Crowell CLE ,7.9
-Danny Woodhead SD ,7.7
-Giovani Bernard CIN ,7.7
-Jeremy Hill CIN ,7.7
-Melvin Gordon SD ,7.7
-T.J. Yeldon JAC ,7.6
-Rashad Jennings NYG ,7.5
-Justin Forsett ,7.3
-Spencer Ware KC ,7.1
-Charles Sims TB ,7.1
-Arian Foster MIA ,7.0
-Chris Ivory JAC ,6.8
-James Starks GB ,6.2
-Theo Riddick DET ,6.2
-Darren Sproles PHI ,6.2
-Bilal Powell NYJ ,6.1
-Shane Vereen NYG ,6.0
-James White NE ,5.5
-Tevin Coleman ATL ,5.5
-Derrick Henry TEN ,5.2
-Jerick McKinnon MIN ,5.2
-DeAndre Washington OAK ,4.9
-Jay Ajayi MIA ,4.8
-Jordan Howard CHI ,4.6
-Javorius Allen BAL ,4.5
-Terrance West BAL ,4.4
-Devontae Booker DEN ,4.0
-Chris Johnson ARI ,3.9
-C.J. Prosise SEA ,3.9
-Chris Thompson WAS ,3.8
-Alfred Blue HOU ,3.5
-Benny Cunningham LA ,3.5
-Shaun Draughn SF ,3.4
-Keith Marshall WAS ,3.3
-Alfred Morris DAL ,3.3
-C.J. Spiller NO ,3.3
-Josh Ferguson IND ,3.2
-Christine Michael SEA ,3.2
-Charcandrick West KC ,3.2
-Tim Hightower NO ,3.1
-Zach Zenner DET ,2.8
-Paul Perkins NYG ,2.7
-Andre Ellington ARI ,2.7
-Kenjon Barner PHI ,2.5
-Cameron Artis-Payne CAR ,2.4
-Robert Kelley WAS ,2.4
-Reggie Bush BUF ,2.3
-Tyler Ervin HOU ,2.3
-Mike Tolbert CAR ,2.2
-Robert Turbin IND ,2.2
-Ka'Deem Carey CHI ,2.1
-Marcel Reece OAK ,2.1
-Fitzgerald Toussaint PIT ,2.1
-Mike Gillislee BUF ,2.1
-Darren McFadden DAL ,2.0
-Brandon Bolden NE ,1.8
-Kenneth Dixon BAL ,1.8
-Donald Brown ,1.6
-Kenyan Drake MIA ,1.6
-Khiry Robinson ,1.5
-Wendell Smallwood PHI ,1.5
-Denard Robinson JAC ,1.4
-Tyler Gaffney ,1.4
-Malcolm Brown LA ,1.3
-Taiwan Jones OAK ,1.3
-Orleans Darkwa NYG ,1.2
-Ronnie Hillman ,1.1
-Jonathan Williams BUF ,1.1
-Matt Asiata MIN ,1.1
-Jacquizz Rodgers ,1.0
-Dreamius Smith ,1.0
-Jordan Todman IND ,1.0
-Cedric Peerman CIN ,1.0
-Dexter McCluster ,0.9
-Fozzy Whittaker CAR ,0.9
-Lance Dunbar DAL ,0.9
-Jonathan Grimes HOU ,0.9
-Antonio Andrews TEN ,0.8
-Terron Ward ATL ,0.8
-Mike Davis SF ,0.8
-Kyle Juszczyk BAL ,0.8
-Stepfan Taylor ARI ,0.7
-Chase Reynolds LA ,0.7
-Dwayne Washington DET ,0.7
-Kelvin Taylor SF ,0.6
-Andre Williams SD ,0.6
-Mack Brown WAS ,0.6
-Jamize Olawale OAK ,0.6
-Tyler Varga ,0.6
-Rex Burkhead CIN ,0.6
-Patrick DiMarco ATL ,0.6
-Raheem Mostert ,0.5
-Rod Smith DAL ,0.5
-Daryl Richardson PIT ,0.5
-Michael Burton DET ,0.5
-George Atkinson CLE ,0.5
-Bruce Miller SF ,0.4
-Bobby Rainey NYG ,0.4
-Mike James TB ,0.4
-Aaron Ripkowski GB ,0.4
-Will Johnson NYG ,0.4
-Jalston Fowler TEN ,0.4
-Jay Prosch HOU ,0.4
-Zac Stacy ,0.3
-Austin Johnson NO ,0.3
-Travaris Cadet ,0.3
-Alex Collins SEA ,0.3
-Ryan Hewitt CIN ,0.3
-Glenn Winston CLE ,0.3
-Anthony Sherman KC ,0.3
-Knile Davis KC ,0.3
-Zach Line MIN ,0.3
-Damien Williams MIA ,0.2
-David Cobb ,0.2
-Corey Grant JAC ,0.2
-John Crockett GB ,0.1
-Stevan Ridley ,0.1
-Juwan Thompson DEN ,0.0
-Daniel Thomas ,0.0
-Jerome Felton ,0.0
+Josh Johnson NYG ,0.0
+Joel Stave MIN ,0.0
+Jimmy Clausen ,0.0
+Marquise Williams ,0.0
+Matt Flynn ,0.0
+Stephen Morris IND ,0.0
+Bryn Renner ,0.0
+Tarvaris Jackson ,0.0
+Keith Wenning ,0.0
+Jake Heaps SEA ,0.0
+Jeff Driskel CIN ,0.0
+Cardale Jones BUF ,0.0
+Brandon Weeden HOU ,0.0
+Aaron Murray PHI ,0.0
+Jake Rudock DET ,0.0
+Jerrod Johnson ,0.0
+Brandon Allen JAC ,0.0
+Brandon Doughty MIA ,0.0
+Christian Ponder SF ,0.0
+Matt Simms ATL ,0.0
+B.J. Daniels ,0.0
+Dan LeFevour ,0.0
+Garrett Grayson NO ,0.0
+Connor Cook OAK ,0.0
+DeAngelo Williams PIT ,20.15
+David Johnson ARI ,20.1
+Ezekiel Elliott DAL ,16.05
+Matt Forte NYJ ,16.71
+Lamar Miller HOU ,15.86
+Todd Gurley LA ,15.24
+C.J. Anderson DEN ,15.33
+Melvin Gordon SD ,15.26
+LeSean McCoy BUF ,15.31
+Mark Ingram NO ,15.81
+Devonta Freeman ATL ,15.11
+DeMarco Murray TEN ,15.36
+Charles Sims TB ,14.97
+Eddie Lacy GB ,13.09
+Spencer Ware KC ,14.17
+LeGarrette Blount NE ,12.09
+Latavius Murray OAK ,13.67
+Christine Michael SEA ,12.3
+Jeremy Langford CHI ,12.97
+Theo Riddick DET ,14.87
+Frank Gore IND ,12.35
+Rashad Jennings NYG ,12.19
+Isaiah Crowell CLE ,10.71
+Ryan Mathews PHI ,11.05
+Jeremy Hill CIN ,10.15
+Tevin Coleman ATL ,11.66
+Jay Ajayi MIA ,10.62
+Matt Jones WAS ,9.45
+Jerick McKinnon MIN ,10.35
+Justin Forsett BAL ,10.67
+Carlos Hyde SF ,9.66
+Shane Vereen NYG ,11.57
+Giovani Bernard CIN ,11.3
+Terrance West BAL ,9.05
+T.J. Yeldon JAC ,10.24
+Duke Johnson CLE ,10.41
+Darren Sproles PHI ,10.11
+Fozzy Whittaker CAR ,8.64
+Chris Ivory JAC ,7.59
+Cameron Artis-Payne CAR ,7.52
+Derrick Henry TEN ,7.67
+Matt Asiata MIN ,8.11
+Charcandrick West KC ,7.91
+Kenyan Drake MIA ,6.86
+Chris Thompson WAS ,8.81
+Jordan Howard CHI ,6.36
+Thomas Rawls SEA ,6.15
+James Starks GB ,6.54
+James White NE ,8.44
+Jacquizz Rodgers TB ,6.44
+Dwayne Washington DET ,6.24
+Alfred Morris DAL ,4.99
+Bilal Powell NYJ ,5.83
+Tim Hightower NO ,4.86
+Devontae Booker DEN ,5.17
+Travaris Cadet NO ,7.13
+Chris Johnson ARI ,4.82
+Shaun Draughn SF ,5.99
+Dexter McCluster SD ,6.11
+Jamaal Charles KC ,4.65
+Jalen Richard OAK ,4.68
+DeAndre Washington OAK ,4.57
+Kenneth Farrow SD ,4.37
+Robert Turbin IND ,3.91
+Mike Tolbert CAR ,4.44
+Benny Cunningham LA ,4.62
+Josh Ferguson IND ,3.83
+Mike Gillislee BUF ,3.4
+Lance Dunbar DAL ,3.43
+Fitzgerald Toussaint PIT ,3.37
+Brandon Bolden NE ,3.76
+C.J. Prosise SEA ,2.74
+Andre Ellington ARI ,3.23
+Alfred Blue HOU ,2.73
+Orleans Darkwa NYG ,2.51
+Tyler Ervin HOU ,2.36
+Damien Williams MIA ,2.15
+Ka'Deem Carey CHI ,2.19
+Zach Zenner DET ,2.38
+Jamize Olawale OAK ,2.13
+Kyle Juszczyk BAL ,2.88
+Reggie Bush BUF ,1.73
+Javorius Allen BAL ,1.79
+Kenjon Barner PHI ,1.71
+Paul Perkins NYG ,1.89
+Taiwan Jones OAK ,1.2
+John Kuhn NO ,1.69
+Wendell Smallwood PHI ,1.16
+Andre Williams SD ,0.95
+Isaiah Pead MIA ,1.04
+Denard Robinson JAC ,1.04
+D.J. Foster NE ,1.39
+Daryl Richardson PIT ,1.07
+Jonathan Grimes HOU ,1.36
+Antonio Andrews TEN ,1.04
+Robert Kelley WAS ,0.93
+Andy Janovich DEN ,0.7
+George Atkinson CLE ,0.66
+Ronnie Hillman MIN ,0.83
+Terron Ward ATL ,0.88
+Malcolm Brown LA ,0.73
+Ryan Hewitt CIN ,0.89
+Jonathan Williams BUF ,0.45
+Kapri Bibbs DEN ,0.9
+Julian Howsare NYJ ,0.71
+Keith Smith DAL ,0.74
+Mike Davis SF ,0.75
+Troymaine Pope NYJ ,0.45
+Patrick DiMarco ATL ,0.79
+James Develin NE ,0.67
+Will Johnson NYG ,0.46
+Peyton Barber TB ,0.52
+Aaron Ripkowski GB ,0.58
+Zach Line MIN ,0.45
+Raheem Mostert CHI ,0.6
+Alex Collins SEA ,0.53
+Cory Harkey LA ,0.75
+Darius Jackson DAL ,0.44
+Jordan Todman IND ,0.37
+Michael Burton DET ,0.46
+Paul Lasike ,0.34
+Jalston Fowler TEN ,0.43
+Roosevelt Nix PIT ,0.37
+Stepfan Taylor ARI ,0.3
+Glenn Winston CLE ,0.4
+Bobby Rainey NYG ,0.44
+Rex Burkhead CIN ,0.41
+Knile Davis KC ,0.31
+Jay Prosch HOU ,0.18
+Malcolm Johnson CLE ,0.51
+Chase Reynolds LA ,0.28
+Rod Smith DAL ,0.25
+Anthony Sherman KC ,0.37
+Derek Watt SD ,0.37
+Daniel Lasco NO ,0.26
+Jerome Felton BUF ,0.23
+Marcus Murphy NO ,0.22
+Corey Grant JAC ,0.21
+DuJuan Harris SF ,0.0
+Tommy Bohanon ,0.0
+Stephen Houston BAL ,0.0
 Kerwynn Williams ,0.0
+Dri Archer BUF ,0.0
+Darren McFadden DAL ,0.0
+Cedric O'Neal ,0.0
+Chris Swain ,0.0
+Brandon Wegher ,0.0
+Dion Lewis NE ,0.0
+Antone Smith ,0.0
+Steven Jackson ,0.0
+Stevan Ridley ,0.0
+Lorenzo Taliaferro BAL ,0.0
+Marshaun Coprich ,0.0
+Jalen Simmons CAR ,0.0
+George Winn DET ,0.0
+Kenneth Dixon BAL ,0.0
 Akeem Hunt HOU ,0.0
-Tre Mason LA ,0.0
-Roy Helu ,0.0
-Antonio Brown PIT ,16.0
-Julio Jones ATL ,15.3
-Odell Beckham Jr. NYG ,13.8
-DeAndre Hopkins HOU ,13.1
-A.J. Green CIN ,11.3
-Jordy Nelson GB ,11.2
-Amari Cooper OAK ,11.2
-Dez Bryant DAL ,11.2
-T.Y. Hilton IND ,11.0
-Mike Evans TB ,10.9
-Brandon Marshall NYJ ,10.9
-Allen Robinson JAC ,10.6
-Randall Cobb GB ,10.4
-Brandin Cooks NO ,10.4
-Sammy Watkins BUF ,10.2
-Alshon Jeffery CHI ,9.9
-Eric Decker NYJ ,9.8
-Jeremy Maclin KC ,9.8
-Keenan Allen SD ,9.4
-Jarvis Landry MIA ,9.3
-Doug Baldwin SEA ,9.2
-Donte Moncrief IND ,9.1
-Golden Tate DET ,9.0
-Demaryius Thomas DEN ,9.0
-Larry Fitzgerald ARI ,8.9
-Michael Floyd ARI ,8.9
-Jordan Matthews PHI ,8.8
-DeSean Jackson WAS ,8.8
-Michael Crabtree OAK ,8.7
-John Brown ARI ,8.4
-Kelvin Benjamin CAR ,8.4
-Corey Coleman CLE ,8.1
-Julian Edelman NE ,8.0
-Allen Hurns JAC ,8.0
-Marvin Jones DET ,7.8
-Emmanuel Sanders DEN ,7.6
-Willie Snead NO ,7.5
-Devante Parker MIA ,7.5
-Tyler Lockett SEA ,7.4
-Torrey Smith SF ,7.3
-Tavon Austin LA ,7.3
-Stefon Diggs MIN ,7.2
-Vincent Jackson TB ,7.2
-Rishard Matthews TEN ,7.0
-Sterling Shepard NYG ,7.0
-Markus Wheaton PIT ,6.8
-Steve Smith BAL ,6.7
-Michael Thomas NO ,6.6
-Phillip Dorsett IND ,6.5
-Travis Benjamin SD ,6.4
-Devin Funchess CAR ,6.3
-Laquon Treadwell MIN ,6.1
-Mohamed Sanu ATL ,5.9
-Terrance Williams DAL ,5.9
-Kamar Aiken BAL ,5.8
-Will Fuller HOU ,5.7
-Pierre Garcon WAS ,5.4
-Kevin White CHI ,5.3
-Mike Wallace BAL ,5.2
-Robert Woods BUF ,5.1
-Kenny Britt LA ,5.0
-Jermaine Kearse SEA ,5.0
-Jamison Crowder WAS ,4.7
-Tyler Boyd CIN ,4.7
-Brandon LaFell CIN ,4.6
-Eli Rogers PIT ,4.5
-Tajae Sharpe TEN ,4.4
-Josh Doctson WAS ,4.4
-Kendall Wright TEN ,4.3
-Breshad Perriman BAL ,4.3
-Nelson Agholor PHI ,4.2
-Anquan Boldin DET ,4.1
-Ted Ginn CAR ,4.0
-Kenny Stills MIA ,3.9
-Justin Hardy ATL ,3.7
-Dorial Green-Beckham PHI ,3.7
-Sammie Coates PIT ,3.7
-Victor Cruz NYG ,3.6
-Chris Conley KC ,3.5
-Terrelle Pryor CLE ,3.4
-Seth Roberts OAK ,3.4
-Davante Adams GB ,3.4
-Cole Beasley DAL ,3.3
-Eddie Royal CHI ,3.2
-Quinton Patton SF ,3.1
-Jaelen Strong HOU ,3.0
-Dontrelle Inman SD ,3.0
-Albert Wilson KC ,2.9
-Charles Johnson MIN ,2.8
-Jarius Wright MIN ,2.7
-Danny Amendola NE ,2.7
-Chris Hogan NE ,2.6
-Chris Moore BAL ,2.6
-De'Anthony Thomas KC ,2.4
-Jeremy Kerley SF ,2.4
-Philly Brown CAR ,2.3
-Dwayne Harris NYG ,2.3
-Brandon Coleman NO ,2.3
-Rashad Greene JAC ,2.3
-Leonte Carroo MIA ,2.3
-Paul Richardson SEA ,2.3
-Andrew Hawkins CLE ,2.2
-J.J. Nelson ARI ,2.2
-Pharoh Cooper LA ,2.2
-Andre Holmes OAK ,2.2
-Kenny Bell ,2.1
-Marqise Lee JAC ,2.1
-Bennie Fowler DEN ,1.9
-Brice Butler DAL ,1.9
-DeAndre Smelter ,1.9
-Cecil Shorts ,1.9
-Quincy Enunwa NYJ ,1.9
-Rashard Higgins CLE ,1.8
-Rueben Randle ,1.8
-Josh Huff PHI ,1.8
-Darrius Heyward-Bey PIT ,1.7
-Tyrell Williams SD ,1.7
-Andre Johnson TEN ,1.7
-Mike Thomas ,1.6
-Braxton Miller HOU ,1.6
-Marquise Goodwin BUF ,1.5
-Harry Douglas TEN ,1.5
-Greg Salas BUF ,1.5
-Brian Quick LA ,1.4
-Ty Montgomery GB ,1.3
-TJ Jones DET ,1.3
-Jordan Norwood DEN ,1.3
-Marquess Wilson CHI ,1.2
-DeAndrew White ,1.2
-Charone Peake NYJ ,1.2
-Mike Thomas LA ,1.1
-Quan Bray IND ,1.1
-Adam Humphries TB ,1.1
-Malcolm Mitchell NE ,1.1
-Ryan Grant WAS ,1.0
-Kevin Smith ,0.9
-Jaron Brown ARI ,0.9
-Cody Latimer DEN ,0.9
-Rod Streater SF ,0.8
-Bryan Walters JAC ,0.8
-Nate Washington ,0.8
-Jared Abbrederis GB ,0.7
-Justin Hunter MIA ,0.7
-Jeff Janis GB ,0.7
-Devin Hester BAL ,0.6
-Jake Kumerow CIN ,0.6
-Deonte Thompson CHI ,0.6
-Aaron Burbridge SF ,0.6
-Dres Anderson SF ,0.6
-Devin Street NE ,0.5
-Jordan Payton CLE ,0.5
-Lucky Whitehead DAL ,0.5
-Marquez North ,0.5
-Tyreek Hill KC ,0.5
-Demarcus Robinson KC ,0.5
-Aldrick Robinson ATL ,0.5
-Myles White NYJ ,0.5
-Jarrett Boykin ,0.5
-Nick Williams KC ,0.5
-Jerome Simpson ,0.5
-Michael Campanaro BAL ,0.4
-Russell Shepard TB ,0.4
-Tre McBride TEN ,0.4
-Kenbrell Thompkins ,0.4
-Rashad Ross WAS ,0.4
-Bradley Marquez LA ,0.3
-Taylor Gabriel ATL ,0.3
-Walter Powell BUF ,0.3
-Eric Weems ATL ,0.3
-Adam Thielen MIN ,0.3
-Cordarrelle Patterson MIN ,0.3
-Trevor Davis GB ,0.3
-Kevin Norwood CAR ,0.3
-Roger Lewis NYG ,0.3
-Stephen Hill ,0.3
-Aaron Dobson ,0.3
-Geremy Davis NYG ,0.3
-Brandon Tate ,0.3
-Kaelin Clay BAL ,0.3
-Josh Bellamy CHI ,0.3
-Cody Core CIN ,0.3
-Keith Mumphery HOU ,0.2
-Dezmin Lewis BUF ,0.2
-Griff Whalen ,0.2
-Devin Smith NYJ ,0.2
-Louis Murphy TB ,0.2
-Keshawn Martin ,0.1
+Bishop Sankey NE ,0.0
+Brandon Burks ,0.0
+Elijhaa Penny ARI ,0.0
+Russell Hansbrough ,0.0
+Alstevis Squirewell ,0.0
+Joe Kerridge ,0.0
+Brandon Ross ,0.0
+Joique Bell ,0.0
+Joey Iosefa ,0.0
+Sam Bergen ,0.0
+Mack Brown WAS ,0.0
+C.J. Spiller ,0.0
+Juwan Thompson DEN ,0.0
+Jahwan Edwards ,0.0
+David Cobb PIT ,0.0
+Marcel Reece OAK ,0.0
+Brandon Wilds ,0.0
+Dan Vitale TB ,0.0
+Fred Jackson ,0.0
+Aaron Green LA ,0.0
+Khiry Robinson ,0.0
+Brandon Brown-Dukes PIT ,0.0
+Ameer Abdullah DET ,0.0
+Bruce Miller ,0.0
+Glenn Gronkowski ,0.0
+Joe Banyard ,0.0
+Gus Johnson ,0.0
+Terrence Magee ,0.0
+Dan Herron ,0.0
+Julio Jones ATL ,26.04
+Antonio Brown PIT ,25.82
+Odell Beckham Jr. NYG ,19.44
+DeAndre Hopkins HOU ,19.03
+Jordy Nelson GB ,17.42
+Allen Robinson JAC ,17.02
+Brandin Cooks NO ,17.53
+Jarvis Landry MIA ,18.5
+A.J. Green CIN ,17.11
+T.Y. Hilton IND ,16.93
+Alshon Jeffery CHI ,17.07
+Larry Fitzgerald ARI ,16.82
+Amari Cooper OAK ,16.69
+Mike Evans TB ,16.0
+Marvin Jones DET ,16.66
+Kelvin Benjamin CAR ,15.65
+Brandon Marshall NYJ ,15.68
+Travis Benjamin SD ,15.64
+Dez Bryant DAL ,14.91
+Willie Snead NO ,16.03
+Jordan Matthews PHI ,15.91
+Stefon Diggs MIN ,15.62
+Jeremy Maclin KC ,15.09
+Doug Baldwin SEA ,14.86
+Eric Decker NYJ ,14.46
+Devante Parker MIA ,13.38
+Michael Floyd ARI ,13.01
+Michael Crabtree OAK ,13.61
+Julian Edelman NE ,14.73
+Randall Cobb GB ,14.4
+Demaryius Thomas DEN ,13.95
+Tajae Sharpe TEN ,13.7
+Sterling Shepard NYG ,13.55
+Tyrell Williams SD ,12.67
+Will Fuller HOU ,13.13
+Mike Wallace BAL ,12.12
+Phillip Dorsett IND ,12.19
+DeSean Jackson WAS ,12.58
+Mohamed Sanu ATL ,11.95
+Allen Hurns JAC ,10.95
+Emmanuel Sanders DEN ,11.73
+Tyler Lockett SEA ,10.76
+Tavon Austin LA ,11.21
+Golden Tate DET ,11.75
+Terrelle Pryor CLE ,10.5
+Steve Smith BAL ,10.5
+Michael Thomas NO ,10.41
+Sammy Watkins BUF ,9.81
+Vincent Jackson TB ,9.42
+Kenny Britt LA ,9.42
+Victor Cruz NYG ,9.65
+Quincy Enunwa NYJ ,9.13
+Torrey Smith SF ,9.0
+Kenny Stills MIA ,8.06
+Cole Beasley DAL ,9.27
+Kevin White CHI ,8.86
+Markus Wheaton PIT ,8.42
+John Brown ARI ,8.01
+Rishard Matthews TEN ,8.31
+Pierre Garcon WAS ,8.57
+Jamison Crowder WAS ,9.33
+Eddie Royal CHI ,8.86
+Robert Woods BUF ,8.57
+Davante Adams GB ,7.83
+Nelson Agholor PHI ,8.32
+Jermaine Kearse SEA ,7.6
+Dontrelle Inman SD ,7.65
+Anquan Boldin DET ,8.33
+Eli Rogers PIT ,7.82
+Jeremy Kerley SF ,7.39
+Brandon LaFell CIN ,6.75
+Terrance Williams DAL ,6.5
+Marquise Goodwin BUF ,5.76
+Tyler Boyd CIN ,6.64
+Quinton Patton SF ,6.53
+Breshad Perriman BAL ,6.16
+Sammie Coates PIT ,5.78
+Greg Salas BUF ,5.86
+Dorial Green-Beckham PHI ,6.3
+Chris Hogan NE ,6.32
+Devin Funchess CAR ,5.77
+Andrew Hawkins CLE ,6.03
+Seth Roberts OAK ,5.91
+Adam Thielen MIN ,6.27
+Chris Conley KC ,5.55
+Ted Ginn CAR ,5.23
+Josh Doctson WAS ,5.25
+Kendall Wright TEN ,5.43
+Adam Humphries TB ,5.52
+Justin Hardy ATL ,5.09
+Marqise Lee JAC ,4.7
+Danny Amendola NE ,5.81
+Jaelen Strong HOU ,5.12
+Albert Wilson KC ,5.01
+Charles Johnson MIN ,5.12
+Kamar Aiken BAL ,4.64
+Philly Brown CAR ,4.33
+Quan Bray IND ,3.98
+Rashard Higgins CLE ,4.08
+Chester Rogers IND ,3.76
+Andre Holmes OAK ,3.0
+Brian Quick LA ,3.67
+Paul Richardson SEA ,3.21
+Andre Johnson TEN ,3.68
+Pharoh Cooper LA ,3.23
+Rashad Greene JAC ,3.28
+J.J. Nelson ARI ,2.62
+Ricardo Louis CLE ,3.11
+Jaron Brown ARI ,2.88
+Josh Huff PHI ,3.13
+Jordan Norwood DEN ,3.03
+Brice Butler DAL ,2.63
+Cody Latimer DEN ,2.17
+Jarius Wright MIN ,2.39
+Bennie Fowler DEN ,2.57
+Jalin Marshall NYJ ,2.46
+Laquon Treadwell MIN ,2.04
+Leonte Carroo MIA ,1.88
+Malcolm Mitchell NE ,1.91
+Chris Moore BAL ,2.3
+Harry Douglas TEN ,1.95
+Isaiah Burse ,2.06
+Brandon Coleman NO ,1.65
+Aldrick Robinson ATL ,2.24
+Jared Abbrederis GB ,2.15
+Cecil Shorts TB ,1.68
+Justin Hunter MIA ,1.95
+Deonte Thompson CHI ,1.34
+Mike Thomas LA ,1.66
+Ryan Grant WAS ,1.53
+Tyreek Hill KC ,1.47
+James Wright CIN ,1.36
+Cordarrelle Patterson MIN ,1.65
+Jordan Payton CLE ,1.35
+De'Anthony Thomas KC ,1.49
+Rod Streater SF ,1.55
+Taylor Gabriel ATL ,1.25
+Josh Bellamy CHI ,1.1
+Cameron Meredith CHI ,1.48
+Darrius Heyward-Bey PIT ,1.15
+Dwayne Harris NYG ,0.9
+Bryan Walters JAC ,1.2
+Ty Montgomery GB ,0.72
+Russell Shepard TB ,1.0
+Arrelious Benn JAC ,0.89
+Kaelin Clay BAL ,0.72
+Keith Mumphery HOU ,1.03
+Brandon Tate BUF ,0.63
+Griff Whalen SD ,0.99
+Chris Matthews BAL ,0.68
+Johnny Holton OAK ,0.72
+Aaron Burbridge SF ,0.75
+Jeff Janis GB ,0.74
+Rashad Ross WAS ,0.51
+Tavarres King NYG ,0.66
+Jordan Taylor DEN ,0.7
+Lucky Whitehead DAL ,0.69
+Trevor Davis GB ,0.65
+Aaron Dobson DET ,0.62
+Bradley Marquez LA ,0.76
+Neal Sterling JAC ,0.68
+Mike Thomas ,0.67
+Robby Anderson NYJ ,0.64
+Tommylee Lewis NO ,0.5
+Andre Roberts DET ,0.59
+Demarcus Robinson KC ,0.53
+Charone Peake NYJ ,0.52
+Jakeem Grant MIA ,0.47
+Brenton Bersin CAR ,0.72
+Alex Erickson CIN ,0.48
+Cody Core CIN ,0.6
+Eric Weems ATL ,0.32
+Devin Street IND ,0.39
+Seyi Ajirotutu ,0.43
+Walter Powell BUF ,0.39
+Marc Mariani TEN ,0.27
+Chris Harper SF ,0.39
+Seth DeValve CLE ,0.38
+Devin Hester BAL ,0.24
+Frankie Hammond KC ,0.18
+Matt Slater NE ,0.02
+Tevaun Smith IND ,0.0
+Quenton Bundrage HOU ,0.0
+DeAndre Reaves ,0.0
+Daniel Brown BAL ,0.0
+Kalif Raymond DEN ,0.0
+Jarvis Turner ,0.0
+D.J. Foster NE ,0.0
 Jeremy Ross ,0.0
-Mario Alford ,0.0
-Marc Mariani ,0.0
-Matt Slater NE ,0.0
-Javontee Herndon SD ,0.0
+David Watford PHI ,0.0
+Marquis Bundy ARI ,0.0
+Corey Washington ,0.0
+Alonzo Russell CIN ,0.0
+Darius Jennings CLE ,0.0
+Rashawn Scott MIA ,0.0
+DeAndrew White NE ,0.0
+J.D. McKissic ATL ,0.0
+C.J. Goodwin ATL ,0.0
+Harvey Binford ,0.0
+Jamel Johnson ,0.0
+Wendall Williams NYJ ,0.0
+Devin Lucien NE ,0.0
+Nick Williams KC ,0.0
+Paul Turner PHI ,0.0
 Corey Fuller DET ,0.0
-Andre Caldwell ,0.0
+Jarrod West ,0.0
+James Jones ,0.0
+Uzoma Nwachukwu ,0.0
+Devin Smith NYJ ,0.0
+Roger Lewis NYG ,0.0
+Ben Roberts ,0.0
+Freddie Martino TB ,0.0
+Jake Lampman NO ,0.0
+Jace Billingsley DET ,0.0
+Jonathan Krause SD ,0.0
+Keshawn Martin ,0.0
+Jerome Simpson ,0.0
+Rashad Lawrence JAC ,0.0
+Bryce Treggs PHI ,0.0
+Cobi Hamilton PIT ,0.0
+Daniel Braverman CHI ,0.0
+Kain Colter ,0.0
+Kadron Boone ,0.0
+Devon Cajuste GB ,0.0
+Brittan Golden ARI ,0.0
+Dwayne Bowe ,0.0
+Dom Williams SD ,0.0
 Jeremy Butler TB ,0.0
-Frankie Hammond KC ,0.0
-Rob Gronkowski NE ,9.8
-Greg Olsen CAR ,8.2
-Jordan Reed WAS ,8.0
-Travis Kelce KC ,7.8
-Coby Fleener NO ,7.6
-Delanie Walker TEN ,7.2
-Gary Barnidge CLE ,7.0
-Zach Ertz PHI ,6.8
-Antonio Gates SD ,6.7
-Jimmy Graham SEA ,6.5
-Jason Witten DAL ,6.3
-Dwayne Allen IND ,6.3
-Julius Thomas JAC ,6.0
-Eric Ebron DET ,5.6
-Tyler Kroft CIN ,5.5
-Zach Miller CHI ,5.3
-Charles Clay BUF ,5.3
-Austin Seferian-Jenkins TB ,5.1
-Jordan Cameron MIA ,5.0
-Clive Walford OAK ,4.8
-Jared Cook GB ,4.7
-Kyle Rudolph MIN ,4.4
-Martellus Bennett NE ,4.2
-Jacob Tamme ATL ,4.0
-Will Tye NYG ,4.0
-Crockett Gillmore BAL ,4.0
-Ryan Griffin HOU ,3.9
-Lance Kendricks LA ,3.7
-Jesse James PIT ,3.6
-Vance McDonald SF ,3.4
-Virgil Green DEN ,3.0
-Larry Donnell NYG ,2.9
-Richard Rodgers GB ,2.7
-Jace Amaro TEN ,2.7
-Luke Willson SEA ,2.6
-Cameron Brate TB ,2.5
-Mychal Rivera OAK ,2.5
-Darren Fells ARI ,2.4
-Hunter Henry SD ,2.3
-Maxx Williams BAL ,2.3
-Garrett Celek SF ,2.3
-Brent Celek PHI ,2.2
-Austin Hooper ATL ,2.1
-Josh Hill NO ,2.0
-Ryan Hewitt CIN ,2.0
-Jack Doyle IND ,2.0
-Tyler Higbee LA ,2.0
-Matt Spaeth ,1.8
-C.J. Uzomah CIN ,1.8
-Chris Gragg BUF ,1.8
-Jermaine Gresham ARI ,1.8
-Jeff Heuerman DEN ,1.7
-Gavin Escobar DAL ,1.7
-Ed Dickson CAR ,1.7
-James O'Shaughnessy KC ,1.6
-C.J. Fiedorowicz HOU ,1.5
-Cooper Helfet ,1.5
-Marcedes Lewis JAC ,1.4
-Dion Sims MIA ,1.4
-Anthony Fasano TEN ,1.3
-Blake Bell SF ,1.2
-Jim Dray BUF ,1.2
-Niles Paul WAS ,1.1
-Vernon Davis WAS ,1.0
-Levine Toilolo ATL ,1.0
-Craig Stevens ,1.0
-Rob Housler ,1.0
-Trey Burton PHI ,0.9
-Troy Niklas ARI ,0.9
-Brandon Pettigrew DET ,0.9
-Rhett Ellison MIN ,0.8
-Kellen Davis NYJ ,0.7
-James Hanna DAL ,0.7
-MyCole Pruitt MIN ,0.7
-Dennis Pitta BAL ,0.7
-Nick Vannett SEA ,0.6
-Malcolm Johnson CLE ,0.5
-Clay Harbor NE ,0.5
-Luke Stocker TB ,0.5
-Seth DeValve CLE ,0.5
-Jerell Adams NYG ,0.5
-Justin Perillo GB ,0.4
-Sean McGrath SD ,0.4
-Lee Smith OAK ,0.4
-Michael Hoomanawanui NO ,0.4
-Cory Harkey LA ,0.4
-Nick O'Leary BUF ,0.4
-Logan Paulsen CHI ,0.4
-Brandon Myers TB ,0.3
-Jeff Cumberland SD ,0.3
-Demetrius Harris KC ,0.3
-Phillip Supernaw TEN ,0.3
-Erik Swoope IND ,0.3
-Asante Cleveland ,0.3
-Ben Braunecker CHI ,0.3
-Brian Parker NYJ ,0.3
-John Phillips DEN ,0.2
-Khari Lee ,0.2
-Zach Sudfeld ,0.0
-Chandler Catanzaro ARI ,8.1
-Steven Hauschka SEA ,8.0
-Justin Tucker BAL ,8.0
-Dan Bailey DAL ,8.0
-Nick Novak HOU ,7.9
-Kai Forbath NO ,7.8
-Mason Crosby GB ,7.7
-Chris Boswell PIT ,7.7
-Matt Bryant ATL ,7.7
-Stephen Gostkowski NE ,7.7
-Adam Vinatieri IND ,7.6
-Tom Obarski ,7.5
-Cairo Santos KC ,7.5
-Graham Gano CAR ,7.4
-Matt Prater DET ,7.4
-Randy Bullock NYG ,7.4
-Blair Walsh MIN ,7.4
-Nick Folk NYJ ,7.4
-Phil Dawson SF ,7.2
-Mike Nugent CIN ,7.2
-Dustin Hopkins WAS ,7.1
-Sebastian Janikowski OAK ,7.1
-Dan Carpenter BUF ,6.9
-Cody Parkey ,6.9
-Patrick Murray CLE ,6.8
-Brandon McManus DEN ,6.8
-Caleb Sturgis PHI ,6.8
-Jason Myers JAC ,6.7
-Greg Zuerlein LA ,6.7
-Roberto Aguayo TB ,6.7
-Travis Coons ,6.5
-Josh Lambo SD ,6.5
-Ryan Succop TEN ,6.4
-Andrew Franks MIA ,6.3
-Connor Barth ,6.1
-Robbie Gould ,4.6
-Green Bay Packers GB ,9.3
-Los Angeles Rams LA ,8.9
-Seattle Seahawks SEA ,8.6
-Kansas City Chiefs KC ,8.4
-Minnesota Vikings MIN ,8.3
-Cincinnati Bengals CIN ,8.3
-Houston Texans HOU ,8.3
-Carolina Panthers CAR ,8.2
-Philadelphia Eagles PHI ,7.6
-Cleveland Browns CLE ,7.6
-Detroit Lions DET ,7.3
-Arizona Cardinals ARI ,6.9
-Buffalo Bills BUF ,6.9
-Denver Broncos DEN ,6.8
-Pittsburgh Steelers PIT ,6.7
-New York Giants NYG ,6.7
-Dallas Cowboys DAL ,6.6
-New England Patriots NE ,6.6
-New York Jets NYJ ,6.5
-Indianapolis Colts IND ,6.5
-Atlanta Falcons ATL ,6.5
-Tampa Bay Buccaneers TB ,6.5
+Vince Mayle DAL ,0.0
+Nick Toon ,0.0
+Ryan Whalen ,0.0
+Kenbrell Thompkins ,0.0
+Andy Jones DAL ,0.0
+Marcus Johnson ,0.0
+K.J. Maye ,0.0
+Geremy Davis NYG ,0.0
+Paul McRoberts LA ,0.0
+Marcus Tucker ,0.0
+Evan Spencer ,0.0
+Bralon Addison ,0.0
+Darius Powe NYG ,0.0
+Kenny Lawler SEA ,0.0
+Shane Wynn JAC ,0.0
+Rashaun Simonise ,0.0
+Marvin Hall ,0.0
+Demarcus Ayers PIT ,0.0
+Kendal Thompson WAS ,0.0
+Louis Murphy TB ,0.0
+Andre Caldwell ,0.0
+Riley Cooper ,0.0
+Marquess Wilson CHI ,0.0
+Anthony Dable ,0.0
+Rodney Smith ,0.0
+T.J. Thorpe ,0.0
+Moritz Boehringer MIN ,0.0
+Kenny Bell ,0.0
+Braxton Miller HOU ,0.0
+Maurice Harris WAS ,0.0
+Vincent Brown ,0.0
+Jaydon Mickens OAK ,0.0
+Geronimo Allison GB ,0.0
+Mitch Mathews ,0.0
+Austin Hill ,0.0
+Richard Mullaney ,0.0
+Mose Frazier DEN ,0.0
+Herb Waters GB ,0.0
+TJ Jones DET ,0.0
+K.J. Brent OAK ,0.0
+Rueben Randle ,0.0
+Tanner McEvoy SEA ,0.0
+Jay Lee ,0.0
+Terrell Sinkfield ,0.0
+Keyarris Garrett CAR ,0.0
+Byron Marshall PHI ,0.0
+Marcus Lucas SEA ,0.0
+Chris Hubert ,0.0
+Mekale McKay ,0.0
+Jordan Reed WAS ,15.64
+Greg Olsen CAR ,14.07
+Delanie Walker TEN ,13.99
+Travis Kelce KC ,12.24
+Dwayne Allen IND ,11.05
+Julius Thomas JAC ,11.21
+Dennis Pitta BAL ,11.27
+Rob Gronkowski NE ,11.09
+Jason Witten DAL ,11.59
+Antonio Gates SD ,9.63
+Jacob Tamme ATL ,9.91
+Gary Barnidge CLE ,9.42
+Eric Ebron DET ,9.41
+Coby Fleener NO ,9.39
+Kyle Rudolph MIN ,8.98
+Zach Miller CHI ,8.47
+Jesse James PIT ,8.69
+Clive Walford OAK ,8.09
+Charles Clay BUF ,8.74
+Jordan Cameron MIA ,7.66
+Jimmy Graham SEA ,7.44
+Jared Cook GB ,7.05
+Martellus Bennett NE ,7.28
+Hunter Henry SD ,6.84
+Trey Burton PHI ,7.3
+Jack Doyle IND ,6.91
+Vance McDonald SF ,6.69
+Lance Kendricks LA ,5.65
+Cameron Brate TB ,5.71
+Larry Donnell NYG ,5.39
+Richard Rodgers GB ,5.03
+Tyler Kroft CIN ,4.76
+C.J. Uzomah CIN ,4.69
+Darren Fells ARI ,4.7
+Will Tye NYG ,4.67
+Brent Celek PHI ,4.45
+Jermaine Gresham ARI ,3.75
+Austin Hooper ATL ,3.44
+Vernon Davis WAS ,4.09
+Garrett Celek SF ,3.66
+Crockett Gillmore BAL ,3.36
+Luke Willson SEA ,3.22
+Ryan Griffin HOU ,3.41
+Marcedes Lewis JAC ,3.52
+Dion Sims MIA ,3.07
+Stephen Anderson HOU ,3.22
+Jace Amaro TEN ,2.87
+Jeff Heuerman DEN ,2.96
+Tyler Higbee LA ,3.1
+Levine Toilolo ATL ,2.7
+C.J. Fiedorowicz HOU ,2.74
+Brandon Myers TB ,2.37
+Anthony Fasano TEN ,2.25
+Lee Smith OAK ,2.2
+Ed Dickson CAR ,2.33
+Mychal Rivera OAK ,2.21
+John Phillips DEN ,2.34
+Josh Hill NO ,1.98
+Xavier Grimble PIT ,2.06
+Sean McGrath SD ,1.91
+Geoff Swaim DAL ,1.98
+Demetrius Harris KC ,1.56
+James O'Shaughnessy KC ,1.23
+Troy Niklas ARI ,1.48
+Kellen Davis NYJ ,1.29
+Logan Paulsen CHI ,1.18
+Orson Charles DET ,1.16
+Brandon Bostick NYJ ,0.98
+Jeff Cumberland SD ,0.95
+Scott Simonson CAR ,1.29
+Blake Bell SF ,1.18
+Nick Vannett SEA ,0.81
+MyCole Pruitt MIN ,1.01
+Cole Wick DET ,0.87
+Andrew Quarless ,1.1
+Luke Stocker TB ,0.75
+Ben Koyack JAC ,0.69
+Maxx Williams BAL ,0.81
+David Johnson PIT ,0.76
+Rhett Ellison MIN ,0.81
+Justin Perillo GB ,0.61
+Jim Dray BUF ,0.75
+Erik Swoope IND ,0.58
+Khari Lee DET ,0.62
+Gavin Escobar DAL ,0.42
+Clay Harbor NE ,0.73
+Ryan Hewitt CIN ,0.64
+David Morgan MIN ,0.59
+Niles Paul WAS ,0.46
+Nick O'Leary BUF ,0.45
+Jerell Adams NYG ,0.42
+Brandon Williams SEA ,0.39
+Phillip Supernaw TEN ,0.39
+Seth DeValve CLE ,0.42
+Temarrick Hemingway LA ,0.42
+Cory Harkey LA ,0.39
+Randall Telfer CLE ,0.4
+Chris Manhertz NO ,0.4
+Ross Travis KC ,0.37
+MarQueis Gray MIA ,0.2
+Garrett Griffin NO ,0.0
+Braedon Bowman NYJ ,0.0
+Casey Pierce ,0.0
+Paul Lang ,0.0
+Brandon Pettigrew DET ,0.0
+Hakeem Valles ARI ,0.0
+James Hanna DAL ,0.0
+Chase Coffman ,0.0
+Kyle Carter MIN ,0.0
+Steven Scheu ,0.0
+Marcel Jensen ,0.0
+Nic Jacobs ,0.0
+Adam Fuehne ,0.0
+Jake McGee SD ,0.0
+Mitchell Henry ,0.0
+Matt Weiser ,0.0
+Jerome Cunningham TEN ,0.0
+Jimmay Mundine ,0.0
+Eric Wallace ,0.0
+Rico Gathers DAL ,0.0
+Thomas Duarte MIA ,0.0
+Rob Housler ,0.0
+Je'Ron Hamm SF ,0.0
+Clayton Echard ,0.0
+Ladarius Green PIT ,0.0
+Ben Braunecker CHI ,0.0
+Ifeanyi Momah ARI ,0.0
+J.P. Holtz ,0.0
+Tyler Eifert CIN ,0.0
+RaShaun Allen PIT ,0.0
+Austin Traylor SD ,0.0
+Bryce Williams LA ,0.0
+Asante Cleveland SD ,0.0
+Alex Ellis JAC ,0.0
+Ryan Malleck ,0.0
+Tony Moeaki ,0.0
+Beau Sandland CAR ,0.0
+Ryan O'Malley OAK ,0.0
+Brian Parker ,0.0
+Carolina Panthers CAR ,8.5
+Cincinnati Bengals CIN ,7.9
+Pittsburgh Steelers PIT ,7.5
+New England Patriots NE ,8.4
+Minnesota Vikings MIN ,7.1
+Miami Dolphins MIA ,7.8
+Seattle Seahawks SEA ,8.5
+New York Jets NYJ ,7.5
+Los Angeles Rams LA ,7.2
+Baltimore Ravens BAL ,7.5
+Dallas Cowboys DAL ,6.8
+San Diego Chargers SD ,7.0
+Oakland Raiders OAK ,7.6
+Tampa Bay Buccaneers TB ,8.0
+Kansas City Chiefs KC ,8.1
+Denver Broncos DEN ,7.4
+New York Giants NYG ,6.9
+Green Bay Packers GB ,7.6
+Washington Redskins WAS ,6.9
 Chicago Bears CHI ,6.4
-Tennessee Titans TEN ,6.4
-San Francisco 49ers SF ,6.3
-Washington Redskins WAS ,6.2
-New Orleans Saints NO ,6.1
-Baltimore Ravens BAL ,6.0
-Oakland Raiders OAK ,5.8
-Jacksonville Jaguars JAC ,5.8
-Miami Dolphins MIA ,5.5
-San Diego Chargers SD ,5.1
+Philadelphia Eagles PHI ,6.8
+Arizona Cardinals ARI ,6.9
+Indianapolis Colts IND ,6.9
+Cleveland Browns CLE ,6.7
+San Francisco 49ers SF ,5.7
+Jacksonville Jaguars JAC ,6.9
+New Orleans Saints NO ,6.0
+Houston Texans HOU ,6.1
+Detroit Lions DET ,6.6
+Buffalo Bills BUF ,6.2
+Tennessee Titans TEN ,6.0
+Atlanta Falcons ATL ,4.8

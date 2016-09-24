@@ -11,7 +11,7 @@ PLAYER_BLACKLIST = ('Sam Bradford',)
 
 def NFLFormulaFour(lineup, player_holder):
     if not NFLLineupGenerator.lineup_under_salary_cap(lineup):
-        return 0
+        return -100000
     else:
         fitness = get_lineup_player_scores(lineup)
         team_multiplier = get_team_multiplier(lineup)
@@ -20,16 +20,13 @@ def NFLFormulaFour(lineup, player_holder):
         return fitness * team_multiplier * games_multiplier * black_list_multipler
 
 def get_player_score(player):
-    if player.projected_points:
-        if player.projected_points < 5:
-            return -100
-        if player.ppg <= 0:
-            return -100
-        if player.ppg > player.projected_points + 10:
-            return -100
-        return player.projected_points #+ (player.ppg / 3)
-    else:
+    if not player.projected_points:
         return -100
+    if player.projected_points < 5:
+        return -100
+    if player.ppg <= 0:
+        return -100
+    return player.projected_points
 
 def get_lineup_player_scores(lineup):
     fitness = []

@@ -22,7 +22,7 @@ class NFLPlayerHolder:
                 self.te.append(p)
             elif p.position.upper() == "DST":
                 self.dst.append(p)
-            if p.position != "DST" or p.position != "QB":
+            if p.position != "DST" and p.position != "QB":
                 self.flex.append(p)
         if projections:
             self.update_projections(projections)

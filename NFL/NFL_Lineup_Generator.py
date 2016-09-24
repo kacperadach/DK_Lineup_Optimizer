@@ -66,34 +66,26 @@ class NFLLineupGenerator:
                 return p
         return None
 
-    @staticmethod
-    def _is_valid_lineup(lineup):
-        positions = [x.position for x in lineup]
-        for p in positions:
-            num = 
-
     def merge_lineups(self, lineup, second, odds, random=False):
         first_lineup = copy(lineup)
         second_lineup = copy(second)
+        first_odds = odds
         if random is True:
-            first_odds = odds
             second_odds = odds + ((100 - odds) / 2)
         else:
-            first_odds = odds
             second_odds = 100
 
-        positions = GET_ITERABLE_VALID_LINEUP()
         new_lineup = []
-        for x in range(0, len(positions)):
+        for pos in GET_ITERABLE_VALID_LINEUP():
             num = randint(0, 99)
             if num < first_odds:
-                new_player = NFLLineupGenerator.get_player_out_of_lineup(first_lineup, positions[x], new_lineup)
+                new_player = NFLLineupGenerator.get_player_out_of_lineup(first_lineup, pos, new_lineup)
             elif num < second_odds:
-                new_player = NFLLineupGenerator.get_player_out_of_lineup(second_lineup, positions[x], new_lineup)
+                new_player = NFLLineupGenerator.get_player_out_of_lineup(second_lineup, pos, new_lineup)
             else:
-                new_player = self.player_holder.get_random_player(positions[x])
+                new_player = self.player_holder.get_random_player(pos)
             while new_player is None or NFLLineupGenerator.player_in_lineup(new_player, new_lineup):
-                new_player = self.player_holder.get_random_player(positions[x])
+                new_player = self.player_holder.get_random_player(pos)
             new_lineup.append(new_player)
         return new_lineup
 
