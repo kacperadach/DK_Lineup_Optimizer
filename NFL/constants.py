@@ -15,6 +15,8 @@ SALARY_CAP = 50000
 
 POSITIONS = ['QB', 'RB', 'WR', 'TE', 'DST']
 
+NFL_FAN_POSITIONS = ['QB', 'RB', 'WR', 'TE', 'DEF']
+
 POSITIONS_WITH_FLEX = ['QB', 'RB', 'WR', 'TE', 'DST', 'FLEX']
 
 FLEX_POSITIONS = ['RB', 'WR', 'TE']

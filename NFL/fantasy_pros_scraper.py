@@ -80,7 +80,7 @@ def scrape(week):
                 except Exception, e:
                     print 'Error scraping FanPros data: ' + str(e)
 
-    with open('data/fan-pros.csv', 'w') as fp:
+    with open('data/fan-pros-projections.csv', 'w') as fp:
         w = csv.writer(fp, delimiter=',')
         w.writerows(hold)
 

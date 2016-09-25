@@ -1,6 +1,11 @@
+import logging
 from random import randint
 
 from constants import POSITIONS_WITH_FLEX
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 
 class NFLPlayerHolder:
     def __init__(self, players, games=None, projections=None):
@@ -57,3 +62,8 @@ class NFLPlayerHolder:
             for p in set:
                 if not p.projected_points or p.projected_points == 0:
                     set.remove(p)
+
+    def list_all_players(self, pos):
+        if (getattr(self, pos)):
+            for p in getattr(self, pos):
+                logger.info("{} {}".format(p.name, p.projected_points))

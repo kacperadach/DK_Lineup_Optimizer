@@ -1,14 +1,12 @@
 from __future__ import division
 
-import logging
-
 from NFL_Lineup_Generator import NFLLineupGenerator
 from fitness_formulas.NFLFormulaFactory import fitness_formula_factory
 from NFL_Lineup_Sort import sort_lineup
 from constants import GET_ITERABLE_VALID_LINEUP
+from Logger import get_logger
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+logger = get_logger()
 
 
 class GeneticAlgorithm:
@@ -23,11 +21,13 @@ class GeneticAlgorithm:
         else:
             return self.ff(lineup, self.lineup_generator.player_holder)
 
-    def run(self, generations, lineups=None):
+    def run(self, generations, lineups=None, starting_lineup=None):
         if generations == 0:
             return self.get_top_lineup(lineups)
-        elif lineups is None:
+        elif not lineups:
             lineups = self.get_all_random()
+            if starting_lineup:
+                lineups[0] = starting_lineup
 
         num_valid = self.num_of_valid_lineups(lineups)
         if num_valid >= 2:

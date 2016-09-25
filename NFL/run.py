@@ -1,17 +1,17 @@
-from scraper import scrape
+from datetime import datetime
+
+from fantasy_pros_scraper import scrape
 from CSVPlayerGather import get_all_games, get_all_players, get_all_projections
 from NFL_Player_Holder import NFLPlayerHolder
 from NFL_Lineup_Generator import NFLLineupGenerator
 from NFL.GeneticAlgorithm import GeneticAlgorithm
-import logging
-from datetime import datetime
+from Logger import get_logger
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
+logger = get_logger()
 
 DK_SALARY_CSV = "DKSalaries.txt"
-PROJECTIONS_CSV = "fan-pros.csv"
+PROJECTIONS_CSV = "fan-pros-projections.csv"
+
 
 def run(fitness_formula, week=None, iterations=9, generations=500):
     scrape(week)
@@ -24,7 +24,15 @@ def run(fitness_formula, week=None, iterations=9, generations=500):
     player_holder.remove_non_projected_players()
     lineup_gen = NFLLineupGenerator(player_holder)
     g = GeneticAlgorithm(lineup_gen, fitness_formula)
-    best_lineups=[]
+    # best_lineup = None
+    # for x in range(0, iterations):
+    #     logger.info("Generation {}".format(x + 1))
+    #     if not best_lineup:
+    #         best_lineup = g.run(generations)
+    #     else:
+    #         best_lineup = g.run(generations, starting_lineup=best_lineup)
+    # g.print_lineup(best_lineup)
+    best_lineups = []
     for x in range(0, iterations):
         logger.info("Generation {}".format(x + 1))
         best_lineups.append(g.run(generations))

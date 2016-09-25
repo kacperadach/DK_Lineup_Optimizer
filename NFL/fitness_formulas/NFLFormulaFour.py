@@ -6,7 +6,7 @@ import numpy
 # taking ratio between projected_points / ppg then std_dev + min projected_points
 
 TEAM_BLACKLIST = ()
-PLAYER_BLACKLIST = ('Sam Bradford',)
+PLAYER_BLACKLIST = ()
 
 
 def NFLFormulaFour(lineup, player_holder):
@@ -24,7 +24,7 @@ def get_player_score(player):
         return -100
     if player.projected_points < 5:
         return -100
-    if player.ppg <= 0:
+    if player.ppg <= 5:
         return -100
     return player.projected_points
 
